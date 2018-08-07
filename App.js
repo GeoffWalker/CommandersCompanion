@@ -13,7 +13,8 @@ export default class App extends React.Component {
   }
 }
 console.log('hi')
-consolt.log('eh')
+console.log('eh')
+console.log('oh, let\'s go')
 
 const styles = StyleSheet.create({
   container: {
