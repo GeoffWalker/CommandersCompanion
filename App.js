@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import GenericButton from '/components/Setup/GenericButton'
+import {GenericButton} from './components/Setup/GenericButton';
 
 export default class App extends React.Component {
   render() {
     return (
-      <GenericButton value={24}/>
-    );
+      <GenericButton/>
+    )
   }
 }
 

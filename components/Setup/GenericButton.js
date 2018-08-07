@@ -5,12 +5,11 @@ class GenericButton extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>Testing props, {this.props.value}</Text>
+                <Text>Testing props</Text>
             </View>
         )
     }
-
-}
+};
 
 const styles = StyleSheet.create({
     container: {
@@ -20,3 +19,5 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     }
 });
+
+export default GenericButton;
