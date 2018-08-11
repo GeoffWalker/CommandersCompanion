@@ -5,7 +5,7 @@ export default class GenericButton extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>Testing props</Text>
+                <Text>It WORKS! :)</Text>
             </View>
         )
     }
