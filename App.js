@@ -6,9 +6,9 @@ export default class App extends React.Component {
     render() {
         return (
             <View style={style.viewWindow}>
-                <Text>How many players would you like to play with?</Text>
+                <Text>Number of Players</Text>
                 <RadioButtonRow input={[2,3,4,5,6]}/>
-                <Text>How much life would you like to start with?</Text>
+                <Text>Starting Life</Text>
                 <RadioButtonRow input={[10,20,30,40, 'other']}/>
             </View>
         )
