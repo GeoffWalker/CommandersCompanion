@@ -1,19 +1,27 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import RadioButtonRow from './components/Setup/RadioButtonRow';
+import GameScreen from './components/Setup/GameScreen';
+import PlayerCard from './components/Setup/PlayerCard';
+import SetUpPage from './components/Setup/SetUpPage';
 
-export default class App extends React.Component {
-    render() {
-        return (
-            <View style={style.viewWindow}>
-                <Text>Number of Players</Text>
-                <RadioButtonRow input={[2,3,4,5,6]}/>
-                <Text>Starting Life</Text>
-                <RadioButtonRow input={[10,20,30,40, 'other']}/>
-            </View>
-        )
-    }
-}
+var App = React.createClass({
+  _renderScene(route, navigator) {
+      if (route.id === 1){
+          return <SetUpPage navigator={navigator} />
+      }
+      else if (route.id === 2){
+          return <GameScreen navigator={navigator} />
+      }
+  },
+
+  render(){
+      return (
+          <navigator
+              initialRoute={{id: 1, }}
+              renderScene={this._renderScene} />
+      )
+  }
+});
 
 const style = new StyleSheet.create({
     viewWindow: {

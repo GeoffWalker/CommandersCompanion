@@ -8,7 +8,7 @@ export default class RadioButtonRow extends React.Component {
     }
 
     render() {
-        console.log(this.props.input);
+        //console.log(this.props.input);
         let inputProps = this.props.input,
             val0 = inputProps[0],
             val1 = inputProps[1],
